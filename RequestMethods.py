@@ -11,3 +11,10 @@ class Methods(Enum):
     CONNECT = "CONNECT"
     TRACE = "TRACE"
     PATCH = "PATCH"
+
+
+class MethodsShort(Enum):
+    POST = "POST"
+    GET = "GET"
+    PUT = "PUT"
+    DELETE = "DELETE"
