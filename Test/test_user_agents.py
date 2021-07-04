@@ -23,6 +23,6 @@ class TestUserAgents:
 
         response = requests.get(url, headers={"User-agent": data[0]})
         json_obj = json.loads(response.text)
-        assert data[1]['platform'] == json_obj['platform'], "platform mismatch"
-        assert data[1]['browser'] == json_obj['browser'], "browser mismatch"
-        assert data[1]['device'] == json_obj['device'], "device mismatch"
+        assert data[1]['platform'] == json_obj['platform'], f"platform mismatch, response: {response.text}"
+        assert data[1]['browser'] == json_obj['browser'], f"browser mismatch, response: {response.text}"
+        assert data[1]['device'] == json_obj['device'], f"device mismatch, response: {response.text}"
