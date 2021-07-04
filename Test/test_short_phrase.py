@@ -1,6 +1,3 @@
-import requests
-
-
 class TestShortPhrase:
     def test_short_phrase(self):
         phrase = input("Set a phrase, phrase must be under 15 symbols: ")
